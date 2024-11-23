@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/pixels.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Francisco Estrada</h2>   
+        <p>Nacido en el EDOMEX, actualmente estudio la carrera de Infraestructura en Redes Digitales en la Universidad Tecnológica del Valle de Toluca (UTVT) desde el año 2023. El cuatrimestre pasado, participé en un miniproyecto donde desarrollamos una página web para una veterinaria; me encargué del código y de las conexiones a la base de datos.</p>
+        <p>Poseo habilidades en configuración de VLANs, switching, routing, ACLs, EtherChannel, HSRP y OSPF, lo que refleja mi pasión y compromiso con el área de redes y tecnología.</p>
+    </div>
+</div>
+{% endblock %}
